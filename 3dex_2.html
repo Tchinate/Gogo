@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/lol.css" rel="stylesheet">
-    <title>Gogo Permis</title>
+    <title>niakniak</title>
 </head>
 
 <body class="background" style="font-family: 'Times New Roman', Times, serif;">
@@ -36,13 +36,7 @@
 <script type="text/javascript">
     const btn = document.querySelector('#btn');
     const canvas = document.querySelector('#confetti-canvas');
-    const canvas1 = document.querySelector('#confetti-canvas1');
-    const canvas2 = document.querySelector('#confetti-canvas2');
-    const myCanvas = [canvas, canvas1, canvas2];
     function onButtonClick() {
-        myCanvas.forEach(element => {
-            canvas = element;
-
             var myConfetti = confetti.create(canvas, {
                 resize: true,
                 useWorker: true
@@ -51,7 +45,6 @@
                 particleCount: 100,
                 spread: 160
             });
-        });
     }
     btn.addEventListener('click', onButtonClick);
 </script>
