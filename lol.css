@@ -1,0 +1,180 @@
+.background
+{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    background-image: url("/media/background-books.jpg");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+div.test{
+    padding:10px;
+    border:1px solid black;
+    background: #dece9c;
+    margin:50px;
+    position: relative;
+    left:4em;
+    top: 1.25em;
+    width: 35em;
+    height: 16em;
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: "Noctra";
+    src: url("/Noctra/Noctra.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family:"Noctra", sans-serif;
+    font-size:xx-large;
+}
+
+.center{
+    position: relative;
+    text-align: center;
+    top: 6em;
+}
+
+.centertab{
+    position: relative;
+    text-align: center;
+    top: 4em;
+}
+
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+
+/* Wrapper a */
+
+.wrapper{
+  position: fixed;
+  text-align: center;
+  bottom: 5em;
+  transform: translate(-50%, -50%);
+}
+
+a{
+  display: block;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+a span{
+  position: relative;
+  z-index: 2;
+}
+
+a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #C8BA81;
+  transition: all .35s;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a:hover:after{
+  width: 100%;
+}
+
+/* Wrapper button */
+
+button{
+  display: block;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+button span{
+  position: relative;
+  z-index: 2;
+}
+
+button:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #C8BA81;
+  transition: all .35s;
+}
+
+button:hover{
+  color: #fff;
+}
+
+button:hover:after{
+  width: 100%;
+}
+
+.smallshrek{
+    position: relative;
+    width: 30%;
+    height: 30%;
+    left: 10%;
+    bottom: 1em;
+}
+
+.smallhamster{
+    position: relative;
+    width: 60%;
+    height: 60%;
+    left: 10%;
+    bottom: 1em;
+}
+
+/* confetti canvas */
+
+#confetti-canvas {
+  position: fixed; 
+  z-index: 999; 
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
+  height: 100vh; 
+  pointer-events: none;
+}
+
+.smallcat{
+    position: relative;
+    width: 60%;
+    height: 60%;
+    left: 10%;
+    bottom: 1em;
+}
